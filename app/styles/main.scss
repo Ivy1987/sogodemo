@@ -8,6 +8,9 @@ html{
     min-width: 320px;
     background: #fff;
 }
+a{
+    color: rgba(0,0,0,.7);
+}
 
 /* 头部导航条部分样式 */
 header{
@@ -31,6 +34,13 @@ header{
         margin-top: -6px;
         color: #fff;
     }
+    .li-drop .menu-w{
+        min-width: 80px;
+        padding: 0;
+    }
+    .li-drop .menu-w>li>a{
+        padding: 0 10px;
+    }
 
 
 }
@@ -39,6 +49,7 @@ header{
 article{
     .main{
         position: relative;
+        margin-bottom: 120px
     }
     .share{
         position: absolute;
@@ -96,7 +107,6 @@ article{
     .share .share-list li:nth-child(4):hover{
         background-position: -24px -96px;
     }
-
     .logo{
         text-align: center;
         margin-bottom: 15px;
@@ -119,8 +129,73 @@ article{
     .input-style>span{
         background-color: red;
     }
+}
 
-
+/* footer 样式*/
+footer{
+    .footer{
+        margin: 0 auto;
+        width: 500px;
+    }
+    .footer img{
+        width: 62px;
+        height: 62px;
+    }
+    .footer h4{
+        font-size: 14px;
+    }
+    .footer .text-vertical{
+        vertical-align: middle;
+        font-size: 10px;
+    }
+    .footer-left, .footer-right{
+        display: inline-block;
+    }
+    .footer .div-w{
+        width: 95px;
+    }
+    .footer-left::after{
+        content: '';
+        display: block;
+        height: 62px;
+        margin-top: -62px;
+        border-right: 1px solid #f2f2f2;
+        vertical-align: top;
+    }
+    .footer-right{
+        margin-left: 10px;
+    }
+    .footer-right .tool-list{
+        border: 0;
+    }
+    .footer-right .tool-list li{
+        border: 0;
+        margin: 0;
+        padding: 0;
+        font-size: 10px;
+        line-height: 24px;
+    }
+    .footer-right .tool-list li:nth-child(1) a{
+        padding-left: 15px;
+        background: url('../images/ico_ft2x.gif') no-repeat;
+        background-size: 1em;
+    }
+    .footer-right .tool-list li:nth-child(1) a:nth-child(2){
+        background-position: 0 -26px;
+    }
+    .footer-right .tool-list li:nth-child(1) a:nth-child(3){
+        background-position: 0 -52px;
+    }
+    .footer-right .tool-list li span{
+        padding: 0 10px;
+        color: rgba(0,0,0,.5);
+    }
+    .footer-right .tool-list li:nth-child(2) a+a::before,
+    .footer-right .tool-list li:nth-child(3) a+a::before{
+        content: "-";
+        display: inline-block;;
+        padding-right: 3px;
+    }
 }
 
 /* 小屏幕（平板，大于等于 768px） */
