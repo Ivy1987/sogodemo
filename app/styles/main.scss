@@ -6,11 +6,53 @@ $icon-font-path: '../fonts/';
 /* 全局样式 */
 html{
     min-width: 320px;
+    background: #fff;
 }
 
 /* 头部导航条部分样式 */
 header{
-    ul{
-        border: 1px solid red;
+    nav{
+        padding-right: 15px;
+        padding-top: 10px;
     }
+    .header-nav>li>a{
+        line-height: 20px;
+        padding: 0 10px;
+        margin: 0;
+    }
+    .nav-control li:nth-child(5) a{
+        background: red;
+        padding-top: 4px;
+        padding-bottom: 4px;
+        margin-top: -6px;
+        color: #fff;
+    }
+
+
+}
+
+/* 主体部分 */
+article{
+    .logo{
+        text-align: center;
+    }
+
+}
+
+/* 小屏幕（平板，大于等于 768px） */
+@media (min-width: 320px) {
+
+}
+@media (min-width: 768px) {
+
+}
+
+/* 中等屏幕（桌面显示器，大于等于 992px） */
+@media (min-width: 992px) {
+
+}
+
+/* 大屏幕（大桌面显示器，大于等于 1200px） */
+@media (min-width: 1200px) {
+
 }
