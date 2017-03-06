@@ -35,24 +35,51 @@ header{
 article{
     .logo{
         text-align: center;
+        margin-bottom: 15px;
     }
+    .input-style{
+        width: 90%;
+        margin-left: 5%;
+        border-radius: 2px;
+    }
+    .input-style i{
+        padding-left: 15px;
+        padding-right: 15px;
+        color: #fff;
+    }
+    .input-style>span{
+        background-color: red;
+    }
+
 
 }
 
 /* 小屏幕（平板，大于等于 768px） */
-@media (min-width: 320px) {
-
-}
 @media (min-width: 768px) {
-
+    article{
+        .input-style{
+            width: 80%;
+            margin-left: 10%;
+        }
+    }
 }
 
 /* 中等屏幕（桌面显示器，大于等于 992px） */
 @media (min-width: 992px) {
-
+    article{
+        .input-style{
+            width: 70%;
+            margin-left: 17%;
+        }
+    }
 }
 
 /* 大屏幕（大桌面显示器，大于等于 1200px） */
 @media (min-width: 1200px) {
-
+    article{
+        .input-style{
+            width: 60%;
+            margin-left: 22%;
+        }
+    }
 }
