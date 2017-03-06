@@ -15,6 +15,10 @@ header{
         padding-right: 15px;
         padding-top: 10px;
     }
+    .nav-list li, .header-nav>li{
+        float: left;
+        margin-bottom: 15px;
+    }
     .header-nav>li>a{
         line-height: 20px;
         padding: 0 10px;
@@ -33,6 +37,66 @@ header{
 
 /* 主体部分 */
 article{
+    .main{
+        position: relative;
+    }
+    .share{
+        position: absolute;
+        right: 10%;
+        top: -15px;
+    }
+    .share .share-icon{
+        width: 24px;
+        height: 24px;
+        font-size: 0;
+        display: inline-block;
+        background: url('../images/ico_share.png') no-repeat;
+    }
+    .share .share-list{
+        display: inline-block;
+        margin-left: -8px;
+        padding-left: 10px;
+        visibility: hidden;
+    }
+    .share .share-icon:hover~.share-list{
+        visibility: visible;
+    }
+    .share .share-list:hover{
+        visibility: visible;
+    }
+    .share .share-list li{
+        width: 24px;
+        height: 24px;
+        font-size: 0;
+        margin-right: 10px;
+        display: inline-block;
+        background: url('../images/ico_share.png') no-repeat;
+    }
+    .share .share-list li:nth-child(1){
+        background-position: 0 -24px;
+    }
+    .share .share-list li:nth-child(2){
+        background-position: 0 -48px;
+    }
+    .share .share-list li:nth-child(3){
+        background-position: 0 -72px;
+    }
+    .share .share-list li:nth-child(4){
+        background-position: 0 -96px;
+    }
+    .share .share-list li:nth-child(1):hover{
+        background-position: -24px -24px;
+    }
+    .share .share-list li:nth-child(2):hover{
+        background-position: -24px -48px;
+    }
+    .share .share-list li:nth-child(3):hover{
+        background-position: -24px -72px;
+    }
+    .share .share-list li:nth-child(4):hover{
+        background-position: -24px -96px;
+    }
+
     .logo{
         text-align: center;
         margin-bottom: 15px;
@@ -41,6 +105,11 @@ article{
         width: 90%;
         margin-left: 5%;
         border-radius: 2px;
+    }
+    .input-style > .border-radius {
+        border-radius: 2px;
+        border: 1px solid rgba(0,0,0,.25);
+        box-shadow: none;
     }
     .input-style i{
         padding-left: 15px;
